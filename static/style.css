@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+#title-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#profile-icon{
+    font-size: 40px;
+}
+.welcome-message{
+    font-family: "Geist Pixel",sans-serif;
+}
+body{
+    background-color:#F4F6F5;
+    color:#5A3A33;
+    font-family: "Rubik", sans-serif;
+    margin:30px;
+}
+.dashboard-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 2mm;
+    row-gap: 2mm;
+}
+.card{
+    padding: 30PX;
+    height: 200px;
+    border-radius: 20px;
+    font-weight:bolder;
+    font-size: larger;
+}
+#progress{
+    background-color:#FFF7F5;
+   
+}
+#habits{
+    background-color: #FBEFEA;
+    
+}
+#todo{
+    background-color: #F8F3EC;
+}
+#acknowledge{
+    background-color: #F7F1E8;
+}
