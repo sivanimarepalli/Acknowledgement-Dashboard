@@ -18,7 +18,7 @@ body{
 }
 .dashboard-container{
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: 2mm;
     row-gap: 2mm;
 }
@@ -28,6 +28,10 @@ body{
     border-radius: 20px;
     font-weight:bolder;
     font-size: larger;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
 }
 #progress{
     background-color:#FFF7F5;
