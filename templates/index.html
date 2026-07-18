@@ -27,27 +27,14 @@
         <div class="card" id="habits">
         <h3>Today's Habits</h3>
         <ul>
-        <li>Coding</li>
-        <li>Dashboard Project</li>
-        <li>Languages</li>
-        <li>Drawing</li>
-        <li>Excel</li>
+        {%for task in habit_card_tsk%}
+        <li>{{task}}</li>
+        {%endfor%}
         </ul>
         </div>
         <div class="card" id="todo">
         <h3>To Do</h3>
         {%for habit in habits%}
-            <!-- <input type="checkbox" id="drawing_practice" name="Drawing Practice">
-            <label for="drawing_practice">Drawing Practice</label><br>
-            <input type="checkbox" id="coding_practice" name="Coding Practice">
-            <label for="coding_practice">Coding Practice</label><br>
-            <input type="checkbox" id="languages" name="Languages">
-            <label for="languages">Languages</label><br>
-            <input type="checkbox" id="dashboard-project" name="Dashboard Project">
-            <label for="dashboard-project">Dashboard Project</label><br>
-            <input type="checkbox" id="reading_practice" name="Reading Practice">
-            <label for="reading_practice">Reading practice</label><br> -->
-            
             <input type="checkbox"
             id="box-{{ habit }}"
             name="{{ habit }}">
