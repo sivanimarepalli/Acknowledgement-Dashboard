@@ -18,10 +18,9 @@
         <div class="card" id="progress">
         <h3>Today's Progress</h3>
         <ul>
-        <li>DashBoard: 40%</li>
-        <li>Coding: 1/1</li>
-        <li>Drawing: 1/1</li>
-        <li>Language: 0/1</li>
+        {%for task, done in progress_tasks.items()%}
+        <li>{{ task }}: {{ done }}</li>
+        {%endfor%}
         </ul>
         </div>
         <div class="card" id="habits">
