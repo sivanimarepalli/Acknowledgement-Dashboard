@@ -32,13 +32,18 @@ body{
     box-shadow: 0 4px 10px rgb(0,0,0,0.08);
 }
 .card:hover{
-    transform: translateY(-5px) scale(110%);
+    transform: translateY(-5px) scale(103%);
     
 }
 #progress{
-    background-color:#FFF7F5;
-   
+    background-color:#FFF7F5;   
 }
+#progress ul{
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+    }
 #habits{
     background-color: #FBEFEA;
     
@@ -46,6 +51,10 @@ body{
 #todo{
     background-color: #F8F3EC;
 }
+#todo input[type="checkbox"] + label{
+        padding:15px;
+        cursor:pointer;
+    }
 #acknowledge{
     background-color: #F7F1E8;
 }
