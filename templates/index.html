@@ -19,7 +19,10 @@
         <h3>Today's Progress</h3>
         <ul>
         {%for task, done in progress_tasks.items()%}
-        <li>{{ task }}: {{ done }}</li>
+        <li>
+            <span> {{ task }}</span>
+            <span>{{ done }}</span>
+        </li>
         {%endfor%}
         </ul>
         </div>
@@ -34,11 +37,13 @@
         <div class="card" id="todo">
         <h3>To Do</h3>
         {%for habit in habits%}
+        <div class="todo-item">
             <input type="checkbox"
             id="box-{{ habit }}"
             name="{{ habit }}">
-            <label for="box-{{ habit }}">{{ habit }}</label><br>
-            {%endfor%}
+            <label for="box-{{ habit }}">{{ habit }}</label>
+        </div>
+        {%endfor%}
         </div>
         
         <div class="card" id="acknowledge">
