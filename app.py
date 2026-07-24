@@ -4,9 +4,7 @@ app = Flask(__name__)
 def helloMessage():
     name="Sivani"
     habits=["Drawing Practice","Coding Practice","Languages","Dashboard Project","Reading Practice"]
-    habit_card_tsk=[]
-    for i in habits:
-        habit_card_tsk.append(i.split(" ")[0])
+    habit_card_tsk=[i.split(" ")[0] for i in habits]
     progress_tasks={"Dashboard":"40%",
                    "Coding":"1/1",
                    "Drawing":"1/1",
